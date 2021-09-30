@@ -1,0 +1,77 @@
+#include <stdio.h> //Подключение библиотеки ввода/вывода
+int main()
+{
+	//Пример 1
+	int a = 10;               //Объявление переменной
+	int b = 12;
+	int result;
+	result = (89 * b - (a + b) / 5) / (b * a + a * 7); // Арифметические операции
+	printf("Result: %d", result); // Вывод
+	return 0;
+}
+
+#include <stdio.h>//Подключение библиотек
+#include <stdlib.h>
+
+int main()
+{
+    //Пример 1
+    int a;      //Объявление переменных
+    int b;
+    int c;
+    printf("a = ");// Вывод
+    scanf("%d", &a); // Ввод
+    printf("b = ");
+    scanf("%d", &b);
+    printf("c = ");
+    scanf("%d", &c);
+    if ((a >= 2) && (a <= 5))
+    {
+        printf(" a попадает в диапазон от 2 до 5 и равно %d", a);
+        if ((a == 2) || (a == 5))
+        {
+            printf(" , также оно находится на границе интервала,");
+        }
+    }
+    if ((b >= 2) && (b <= 5))
+    {
+        printf(", b попадает в диапазон от 2 до 5 и равно %d", b);
+        if ((b == 2) || (b == 5))
+        {
+            printf(", также оно находится на границе интервала,");
+        }
+    }
+    if ((c >= 2) && (c <= 5))
+    {
+        printf(", c попадает в диапазон от 2 до 5 и равно %d", c);
+        if ((c == 2) || (c == 5))
+        {
+            printf(", также оно находится на границе интервала.");
+        }
+    }
+    return 0;
+}
+
+#include <stdio.h>//Подключение библиотек
+#include <stdlib.h>
+int main()
+{
+    int n;                //Объявление переменных
+    float sum = 0;
+    float g = 1;
+    printf("n = ");
+    scanf("%d", &n);
+    for (int i = 1; i <= n; i = i + 1)
+    {
+        g = 1;
+        for (int j = 1; j <= i; j = j + 1)
+        {
+            g = g * j;
+        }
+        sum = sum + 2 + 1 / g;
+    }
+    printf("%f", sum);
+
+    return 0;
+}
+
